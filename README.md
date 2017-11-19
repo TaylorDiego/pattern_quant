@@ -9,11 +9,16 @@ I will attempt this project in several pieces.
 
 from input:
 • find the most represented colors in the image using Lab colorspace
-  - determine relative variability of color in the image
+  - determine relative variability of color in the input
   ___ color is only one aspect of detail; even black and white images can be layered and complex
 
+to output:
 • re-map the image as resampled colors (image relative local minima)
-  - images with lots of detail (distinctive elements) are given fewer colors relative to total number
-  ___ minimizes fuzziness in high detail images
+  - images with lots of detail (distinctive elements) are given fewer colors relative to total number represented
+  ___ minimizes fuzziness in high detail inputs, highlights fuzz in low detail inputs
   ___ think a of a mosaic using colors of higher contrast than alike
-  ___ total count of pixels in each color
+
+determine texture:
+• quantify input texture (noise)
+  - determine color to texture relationships
+  ____ determine possible patterns (three or more similar elements)
